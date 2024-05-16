@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма реєстрації</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="registration-form">
+		<h2>Реєстрація</h2>
+		<form action="http://localhost/signin" method="post">
+			<div class="form-group">
+				<label for="user-name">Ім'я користувача</label>
+				<input type="text" id="user-name" name="user-name" minlength="5" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Електронна адреса</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Пароль</label>
+				<input type="password" id="password" name="password" minlength="8" required>
+			</div>
+			<button type="submit">Відправити</button>
+		</form>
+	</div>
+</body>
+
+</html>
